@@ -1,15 +1,15 @@
 package com.thoughtworks.basic;
 
 public class Student extends Person {
-    private String classNumber;
+    private Klass klass;
 
-    public Student(String name, int age, String classNumber) {
+    public Student(String name, int age, Klass klass) {
         super(name, age);
-        this.classNumber = classNumber;
+        this.klass = klass;
     }
 
     @Override
     public String introduce() {
-        return super.introduce() + " I am a Student of Class " + this.classNumber + ".";
+        return super.introduce() + " I am a Student of Class " + this.klass.getClassNumber() + ".";
     }
 }
