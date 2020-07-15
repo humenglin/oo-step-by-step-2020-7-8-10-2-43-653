@@ -1,12 +1,16 @@
 package com.thoughtworks.basic;
 
 public class Person {
-    private String name;
-    private int age;
+    protected String name;
+    protected int age;
 
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public String introduce() {

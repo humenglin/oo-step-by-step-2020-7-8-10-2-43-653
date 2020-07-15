@@ -15,4 +15,12 @@ public class StudentTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void should_return_Jack_given_changeName_given_student_is_Tom() {
+        Student student = new Student("Tom", 21, new Klass("2"));
+        student.changeName("Jack");
+
+        assertEquals("Jack", student.getName());
+    }
 }

@@ -12,4 +12,8 @@ public class Student extends Person {
     public String introduce() {
         return super.introduce() + " I am a Student of Class " + this.klass.getClassNumber() + ".";
     }
+
+    public void changeName(String name) {
+        this.name = name;
+    }
 }
